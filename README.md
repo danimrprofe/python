@@ -24,3 +24,40 @@ def buscarPalabraAleat(listaPalabras):
 ```
 
 En un lugar del programa, deberemos llamar a la función **buscarPalabraAleat** y asignarle el valor devuelto a la variable que tiene la palabra con la que vamos a jugar.
+
+# 2. Filtrar el tipo de letra permitido
+
+Cualquier tecla del teclado puede ser utilizada por el usuario a la hora de elegir la letra, por lo que debemos comprobar que solo están permitidas letras del alfabeto. Para ello, mejor crear una función **elijeLetra()**, puesto que la vamos a utilizar cada vez que pidamos al usuario una letra.
+
+```python
+def elijeLetra():
+   ...
+   ...
+  return letra
+```
+
+El bloque principal consiste en capturar un input (el funcionamiento que ya tenemos):
+
+```python
+print ('Adivina una letra:')
+letra = input()
+```
+Podemos forzar que la letra se convierta a minúsculas:
+
+  letra = letra.lower()
+
+Podemos comprobar que solo se introduce una letra y no dos o más:
+
+  if len(letra) != 1:
+            
+No tendríamos que poder decir una letra que ya se ha dicho antes. En este caso **algunaLetra** es una lista que contiene todas las letras que ya se han dicho antes.
+
+  if letra in algunaLetra:
+
+Comprobar que la letra está en el alfabeto:
+
+  if letra not in 'abcdefghijklmnopqrstuvwxyz':
+
+
+
+ 
