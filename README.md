@@ -2,11 +2,23 @@
 
 # 1. Permitir elegir entre varias palabras
 
+Necesitaremos en primer lugar crear una lista de palabras:
+
 ```python
-palabras = 'valoracion aprenderpython comida juego python web imposible variable curso volador cabeza reproductor mirada escritor billete lapicero celular valor revista gratuito disco voleibol anillo estrella'.split()
+palabras = 'valoracion aprenderpython comida juego python'.split()
+```
+La función *split()* nos separará las palabras en una lista, mirando los espacios entrer palabras. 
+
+Podemos crear una función que devuelva una palabra al final, de la lista *listaPalabras*. Para ello utilizaremos una función de la librería random, que deberemos importar al principio de nuestro programa.
+
+```python
+import random
+```
+
+La función *radint* devuelve un número aleatorio del rango que pidamos.
  
-def buscarPalabraAleat(listaPalabras):
-    # Esta funcion retorna una palabra aleatoria.
-    palabraAleatoria = random.randint(0, len(listaPalabras) - 1)
-    return listaPalabras[palabraAleatoria]
+```python
+def buscarPalabraAleat(listaPalabras):    
+    posicion = random.randint(0, len(listaPalabras) - 1)
+    return listaPalabras[posicioni]
 ```
