@@ -20,5 +20,7 @@ La función *radint* devuelve un número aleatorio del rango que pidamos.
 ```python
 def buscarPalabraAleat(listaPalabras):    
     posicion = random.randint(0, len(listaPalabras) - 1)
-    return listaPalabras[posicioni]
+    return listaPalabras[posicion]
 ```
+
+En un lugar del programa, deberemos llamar a la función **buscarPalabraAleat** y asignarle el valor devuelto a la variable que tiene la palabra con la que vamos a jugar.
