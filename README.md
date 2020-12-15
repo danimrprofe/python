@@ -2,7 +2,7 @@
 
 Importamos la libreria os para poder utilizar la función de limpiar pantalla:
 
- import os # Para borrar la pantalla
+  import os # Para borrar la pantalla
 
 # Lista de las letras
 
