@@ -94,10 +94,9 @@ import random
 
 La función *radint* devuelve un número aleatorio del rango que pidamos.
  
-```python
-def buscarPalabraAleat(listaPalabras):    
-    posicion = random.randint(0, len(listaPalabras) - 1)
-    return listaPalabras[posicion]
+```python    
+    posicion = random.randint(0, len(palabras) - 1)
+    palabraSecreta = palabras[posicion]
 ```
 
 En un lugar del programa, deberemos llamar a la función **buscarPalabraAleat** y asignarle el valor devuelto a la variable que tiene la palabra con la que vamos a jugar.
