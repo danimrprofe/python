@@ -44,20 +44,27 @@ letra = input()
 ```
 Podemos forzar que la letra se convierta a minúsculas:
 
-  letra = letra.lower()
+```python
+letra = letra.lower()
+```
 
 Podemos comprobar que solo se introduce una letra y no dos o más:
 
-  if len(letra) != 1:
-            
+```python
+if len(letra) != 1:
+```
+
 No tendríamos que poder decir una letra que ya se ha dicho antes. En este caso **algunaLetra** es una lista que contiene todas las letras que ya se han dicho antes.
 
-  if letra in algunaLetra:
+```python
+if letra in algunaLetra:
+```
 
 Comprobar que la letra está en el alfabeto:
 
-  if letra not in 'abcdefghijklmnopqrstuvwxyz':
-
+```python
+if letra not in 'abcdefghijklmnopqrstuvwxyz':
+```
 
 
  
