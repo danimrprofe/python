@@ -158,6 +158,23 @@ if "_" not in palabraResuelta
 - Que hayamos fallado un número suficiente de veces
 
 ```python
-if len(letraIncorrecta) == len("AHORCADO") - 1:
+vidas = 6
+if len(letraIncorrecta) == vidas:
 ```
+
+El bucle principal se tiene que cambiar:
+
+```python
+juegoTerminado = False
+while not juegoTerminado:
+
+  if ganado:
+    juegoTerminado = True
+    mostrarFraseGanado
+  if perdido:
+    juegoTerminado = True
+    mostrarFrasePerdido (y la palabra)
+```    
+  
+   
  
