@@ -142,5 +142,22 @@ Comprobar que la letra está en el alfabeto:
 if letra not in 'abcdefghijklmnopqrstuvwxyz':
 ```
 
+# 2.3 Ganar y perder
 
+Podemos crear una variable booleana finJuego que sea True si ha terminado el juego, y falso si no es así.
+
+El juego puede terminar bajo dos condiciones:
+
+1) Que hayamos resuelto la palabra antes de agotar nuestras oportunidades.
+
+Para ello podemos comprobar que no quedan huecos de letras vacías en la palabra resuelta:
+
+```python
+if "_" not in palabraResuelta
+```
+- Que hayamos fallado un número suficiente de veces
+
+```python
+if len(letraIncorrecta) == len("AHORCADO") - 1:
+```
  
