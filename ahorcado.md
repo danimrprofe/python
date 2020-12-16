@@ -148,14 +148,16 @@ Podemos crear una variable booleana finJuego que sea True si ha terminado el jue
 
 El juego puede terminar bajo dos condiciones:
 
-1) Que hayamos resuelto la palabra antes de agotar nuestras oportunidades.
+## Partida ganada: que hayamos resuelto la palabra antes de agotar nuestras oportunidades.
 
 Para ello podemos comprobar que no quedan huecos de letras vacías en la palabra resuelta:
 
 ```python
 if "_" not in palabraResuelta
 ```
-- Que hayamos fallado un número suficiente de veces
+## Partida perdida: que hayamos fallado un número suficiente de veces
+
+Podemos ayudarnos de una variable que contenga el máximo número de vidas o "errores" permitidos. Si hemos fallado tantas letras como vidas,el juego tiene que terminar.
 
 ```python
 vidas = 6
