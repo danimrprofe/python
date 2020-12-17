@@ -177,6 +177,13 @@ while not juegoTerminado:
     juegoTerminado = True
     mostrarFrasePerdido (y la palabra)
 ```    
-  
-   
+
+# 2.4 Jugar otra vez
+
+```python
+def jugarOtra():
+  print('¿Quieres jugar otra partida? (Sí o no))
+  return input().lower().startswith('s')
+```
+ 
  
