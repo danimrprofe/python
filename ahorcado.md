@@ -186,4 +186,31 @@ def jugarOtra():
   return input().lower().startswith('s')
 ```
  
- 
+# 2.5 Categorías de palabras
+
+Otra mejora del programa consiste en cambiar la lista de palabras por un diccionario que permita agrupar por categorías. En este caso, **listaPalabras** es un diccionario que contiene claves (keys) y valores (values). Cada categoría será una clave (ej:formas), y su valor una lista de elementos (rectangulo,circulo,cuadrado, ...).
+
+- colores
+  - rojo
+  - verde
+- formas
+  - rectangulo
+  - circulo
+  - cuadrado
+  - ...
+
+```python
+import random
+
+listaPalabras = { 'colores': 'rojo verde azul naranja'.split(),
+             'formas': 'rectangulo circulo cuadrado'.split(),
+             'animales': 'perro oso gato'.split()
+           }
+
+categoria = random.choice(list(listaPalabras.keys()))
+
+numPalabra = random.randint(0, len(listaPalabras[categoria]) - 1)
+palabraElegida = listaPalabras[categoria][numPalabra]
+
+print([categoria,palabraElegida])
+```
