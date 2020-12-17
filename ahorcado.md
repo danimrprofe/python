@@ -214,3 +214,39 @@ palabraElegida = listaPalabras[categoria][numPalabra]
 
 print([categoria,palabraElegida])
 ```
+
+# 2.6. Clasificación
+
+Podríamos hacer el juego más competitivo creando una clasificación. Para ello, tendríamos que pensar en algún sistema de puntuación para poder comparar los resultados de las diferentes partidas.
+
+Creamos un diccionario ```tablaClasificacion```, que contendrá el nombre del jugador y su puntuación.
+
+tablaClasificacion = {  'Dani': 4000,
+                        'Pepe: 2000,
+                        'Manolo: 1000,
+                        }
+
+## Añadir puntuación
+
+Tendríamos que pedir el nombre al jugador en una variable ```nombre``` al comenzar la partida y guardarlo en alguna variable, como ```jugador```.
+Al final de la partida, calculamos la puntuación y la guardamos en el diccionario:
+
+```python
+tablaClasificacion[nombre] = puntuacion
+```
+
+## Mostrar clasificación
+
+La función mostrarClasificación podría ser:
+
+```python
+def mostrarClasificacion(tablaClasificacion):
+    print("--------------------------------")
+    print("            CLASIFICACION       ")
+    print("--------------------------------")
+ 
+    jugadores = list(tablaClasificacion.keys())
+    for nombreJugador in jugadores:
+        print("   ", nombreJugador, "    ", tablaClasificacion[nombreJugador])  
+    print("--------------------------------\n")
+```
