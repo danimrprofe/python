@@ -1,0 +1,6 @@
+{"colores": ["rojo", "verde", "azul", "naranja","negro","marron","gris","rosa", "blanco", "turquesa", 
+            "magenta", "lila", "fucsia", "cian", "celeste","violeta","gris","ocre"]
+    , "formas": ["rectangulo", "circulo", "cuadrado","trapecio","hexagono", "pentagono","estrella",
+                "rombo","ovalo","triangulo"]
+    , "animales": ["perro", "oso", "gato", "lobo", "perro", "leon", "gato", "foca", "cocodrilo", "gaviota", "pescado", "tiburon", "puma", "pinguino",  "koala",
+                   "tortuga", "delfin", "caballo", "vaca", "oveja", "cerdo", "gallo", "burro", "raton"]}
